@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./src/imagenes/logo.png">
+    <title>Proyecto-Final</title>
+</head>
+<body class="azuloscuro">
+    <header>
+        <nav>
+            <div class="icono"><a href="index.html">
+                <svg width="200px" height="80px">
+                    <!-- rectangulo beige 60x35-->
+                    <rect id='monitor1' x="32.5" y="5" width="60px" height="35px" rx="5" ry="5" fill="#F0E9D2"></rect>
+                    <!-- rectangulo gris 50x25-->
+                    <rect id='monitor2' x="37.5" y="10" width="50px" height="25px" rx="5" ry="5" fill="#495579"></rect>
+                    <!-- poligono beige 85x17 y=5+35+5..+17 x= 0...+85 -->
+                    <polygon id='teclado1' points="20,62 40,45 85,45 105,62" fill="#F0E9D2"></polygon>
+                    <!-- poligono gris 61x10-->
+                    <polygon id='teclado2' points="32,58.8 43,48.5 82,48.5 93,58.5" fill="#495579"></polygon>
+                </svg>
+            </a></div>
+            <div>
+                <button class="boton"><a href="historia.html">Historia</a></button>
+                <button class="boton"><a href="poneraprueba.html">Juguemos</a></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h1 class="blancotitulotxt">Juguemos un poco</h1>
+        </section>
+        <section class="seccion seccionjuego">
+            <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+            <div class="cajas">
+                <div class="caja" id="drop1">
+                    <p>Arrastre y suelte la imágen aquí</p>
+                </div>
+                <div class="caja" id="drop2">
+                    <p>Arrastre y suelte la imágen aquí</p>
+                </div>
+                <div class="caja" id="drop3">
+                    <p>Arrastre y suelte la imágen aquí</p>
+                </div>
+            </div>
+            <div class="imagenes">
+                <img id='img1' class="imagen" src="./src/imagenes/rompe2.png" alt="rompecabezas">
+                <img id='img2' class="imagen" src="./src/imagenes/Rompe1.png" alt="rompecabezas">
+                <img id='img3' class="imagen" src="./src/imagenes/Rompe3.png" alt="rompecabezas">
+            </div>
+            <button id="reiniciar" class="boton3"><a href="#">Reiniciar</a></button>
+        </section>
+    </main>
+    <script src="juego.js"></script>
+</body>
+</html>
